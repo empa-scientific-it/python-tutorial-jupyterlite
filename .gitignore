@@ -10,6 +10,8 @@ node_modules/
 # Edit at https://www.gitignore.io/?templates=python
 
 ### Python ###
+.venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

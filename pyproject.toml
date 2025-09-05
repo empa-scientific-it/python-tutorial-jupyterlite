@@ -1,0 +1,23 @@
+[project]
+name = "python-tutorial-jupyterlite"
+version = "0.1.0"
+description = "Python tutorial running in JupyterLite with Pyodide"
+requires-python = ">=3.10"
+dependencies = [
+  "ipywidgets>=8.1.7",
+  "jupyterlab~=4.4.5",
+  "jupyterlite-core==0.6.4",
+  "jupyterlite-pyodide-kernel==0.6.1",
+  "markdown>=3.9",
+  "matplotlib>=3.10.6",
+  "notebook~=7.4.5",
+  "numpy>=2.2.6",
+  "openai>=1.106.1",
+  "pandas>=2.3.2",
+  "pillow>=11.3.0",
+  "plotly>=6.3.0",
+  "pytest>=8.4.2",
+  "python-dotenv>=1.1.1",
+  "scikit-learn>=1.7.1",
+  "tenacity>=9.1.2",
+]
