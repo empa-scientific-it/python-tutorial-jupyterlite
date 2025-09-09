@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Python tutorial running in JupyterLite with Pyodide"
 requires-python = ">=3.10"
 dependencies = [
+  "ipytestsuite",
   "ipywidgets>=8.1.7",
   "jupyterlab~=4.4.5",
   "jupyterlite-core==0.6.4",
@@ -21,3 +22,20 @@ dependencies = [
   "scikit-learn>=1.7.1",
   "tenacity>=9.1.2",
 ]
+
+[dependency-groups]
+dev = [
+    "copier>=9.10.1",
+    "jinja2-time>=0.2.0",
+    "nbname",
+]
+
+[tool.uv.workspace]
+members = [
+    "nbname-extension",
+    "ipytestsuite",
+]
+
+[tool.uv.sources]
+nbname = { workspace = true }
+ipytestsuite = { workspace = true }
